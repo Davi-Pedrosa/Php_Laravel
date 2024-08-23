@@ -86,69 +86,75 @@ Diagrama de Classe
 
 Diagrama de Fluxo
 
-. Acesso ao Sistema
-Usuário acessa a página inicial do sistema.
-. Tela de Login/Registro
-    - Novo Usuário
-        Usuário preenche formulário de cadastro.
-        Sistema valida informações.
-        Cadastro Completo
-        Usuário cadastrado com sucesso.
-        Redirecionado para a tela de login.
-    - Usuário Existente
-        Usuário insere credenciais.
-        Sistema valida credenciais.
-        Login Bem-Sucedido
-        Redirecionado para o painel principal.
-. Painel Principal
-    - Opções Disponíveis
-        1.1Agendar Consulta
-        1.2Visualizar Consultas
-        1.3Logout
-1.1. Agendamento de Consulta
-    - Usuário seleciona "Agendar Consulta".
-        Usuário escolhe médico e data/hora.
-        Sistema verifica disponibilidade.
-        Disponível
-        Consulta agendada.
-        Usuário recebe confirmação.
-        Não Disponível
-Mensagem de erro.
-Usuário tenta novamente.
-6. Visualizar Consultas
-
-Usuário seleciona "Visualizar Consultas".
-Selecionar Período
-Usuário escolhe visualizar por dia ou semana.
-Sistema filtra consultas conforme selecionado.
-Mostrar Consultas
-Exibe lista de consultas.
-
-9. Logout
-
-Usuário seleciona "Logout".
-Encerrar Sessão
-Sistema encerra a sessão.
-Redireciona para a tela de login.
-10. Fim
-
-Fim do processo.
-Diagrama de Fluxo Visual
-Início → Acesso ao Sistema
-Acesso ao Sistema
-→ Tela de Login/Registro
-Novo Usuário → Preenchimento do Formulário → Cadastro Completo → Redireciona para Tela de Login
-Usuário Existente → Inserção de Credenciais → Login Bem-Sucedido → Redireciona para Painel Principal
-Painel Principal
-→ Agendar Consulta
-Seleciona Médico e Data → Disponível → Consulta Agendada → Mensagem de Confirmação
-→ Não Disponível → Mensagem de Erro → Usuário Tenta Novamente
-→ Visualizar Consultas
-Seleciona Período → Filtra Consultas → Mostrar Consultas
-→ Editar Informações
-Alterar Dados Pessoais → Salva Alterações → Alterações Confirmadas
-→ Consultar Histórico
-Busca Histórico Médico → Exibe Histórico
-→ Logout
-Encerrar Sessão → Redireciona para Tela de Login
-
++---------------------+
+|  Acesso ao Sistema  |
++---------------------+
+           |
+           v
++-------------------------------+
+|     Tela de Login/Registro     |
+|-------------------------------|
+|        Novo Usuário            |
+|        Usuário Existente       |
++-------------------------------+
+           |
+   +-------+--------+
+   |                |
+   v                v
++---------------------+     +----------------------+
+|   Preenchimento     |     |   Inserção de        |
+|   do Formulário     |     |   Credenciais        |
++---------------------+     +----------------------+
+           |                        |
+           v                        v
++---------------------+     +----------------------+
+|   Sistema valida    |     |   Sistema valida     |
+|   informações       |     |   credenciais        |
++---------------------+     +----------------------+
+           |                        |
+           v                        v
++---------------------+     +----------------------+
+|   Cadastro Completo |     |   Login Bem-Sucedido |
++---------------------+     +----------------------+
+           |                        |
+           v                        v
++-------------------------------+   +-----------------------------+
+|   Redireciona para Tela de    |   |   Redireciona para Painel   |
+|   Login                       |   |   Principal                 |
++-------------------------------+   +-----------------------------+
+                                   |
+                                   v
+                        +------------------------+
+                        |     Painel Principal   |
+                        |------------------------|
+                        |   Agendar Consulta     |
+                        |   Visualizar Consultas |
+                        |   Logout               |
+                        +------------------------+
+                           |           |         |
+                           v           v         v
+           +---------------------+  +-------------------+  +--------------------+
+           | Agendar Consulta    |  | Visualizar        |  | Logout             |
+           |---------------------|  | Consultas         |  |--------------------|
+           | Usuário escolhe     |  | Seleciona Período |  | Encerrar Sessão    |
+           | médico e data/hora  |  |                   |  |                    |
+           +---------------------+  +-------------------+  +--------------------+
+                    |                    |                      |
+                    v                    v                      v
+     +-----------------------------+    +----------------------------+
+     | Sistema verifica            |    | Sistema filtra consultas   |
+     | disponibilidade             |    |                            |
+     +-----------------------------+    +----------------------------+
+        |             |                         |
+   +----+----+  +-----+-----+           +-------+-------+
+   | Disponível |  | Não      |           | Mostrar       |
+   |            |  | Disponível |          | Consultas     |
+   +------------+  +-----------+           +---------------+
+        |                 |                      |
+        v                 v                      v
++------------------+     +-----------------+    +-------------------+
+| Consulta Agendada |     | Mensagem de Erro|    | Visualizar Consultas |
+| + Mensagem de    |     | + Usuário Tenta |    | (continua)           |
+| Confirmação      |     | Novamente        |    +-------------------+
++------------------+     +------------------+  
+           
