@@ -82,7 +82,7 @@ Site de Gerenciamento de consultas médicas onde usuários serão cadastrados e 
 
 Diagrama de Classe
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/79194d87-0048-4f56-bfd8-d3f4f1dbc3be/a9e4997c-0792-43d9-b35f-86bfae03274d/image.png)
+<img src="diagramas/modeloClasse.png">
 
 Diagrama de Fluxo
 
