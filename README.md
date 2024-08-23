@@ -46,11 +46,12 @@ Site de Gerenciamento de consultas médicas onde usuários serão cadastrados e 
 
 | Etapa | Descrição | Tempo Estimado |
 | --- | --- | --- |
-| **Planejamento** | Levantamento de requisitos, escopo, diagramas, objetivos e recursos utilizados ao longo do projeto | 1 dia |
-| **Desenvolvimento**  | Configuração do Ambiente de desenvolvimento Criando Models e Controllers | 1 dia |
-| **Codificação** | Codificação do projeto (PHP Laravel) - Fazer agendamento e Views | 1 dia |
-| **Testes e Ajustes** | Testes funcionais, integração, correção de bugs | 1 dia |
-|  |  |  |
+| Planejamento | Levantamento de requisitos, escopo, diagramas, objetivos e recursos | 5 dias |
+| Configuração do Ambiente e Design | Configuração do ambiente de desenvolvimento, criação de models e controllers | 4 dias |
+| Codificação | Codificação do projeto (PHP Laravel) - Implementação de funcionalidades, views, e integração | 10 dias |
+| Testes e Ajustes | Testes funcionais, integração, correção de bugs | 5 dias |
+| Revisão e Documentação | Revisão final, documentação técnica e de usuário | 3 dias |
+| Deployment | Implantação no ambiente de produção e verificação | 2 dias |
 - **Recursos:**
     
     **Programadores:** Especialistas em desenvolvimento frontend e backend.
@@ -67,7 +68,7 @@ Site de Gerenciamento de consultas médicas onde usuários serão cadastrados e 
     
     **Ferramentas para criação de Diagramas:**  Draw.io
     
-    **Linguagem e Framework:** Php e Laravel 
+    **Linguagem e Framework:** Php e Laravel
     
 
 ### **Análise de Riscos:**
